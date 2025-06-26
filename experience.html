@@ -15,11 +15,77 @@
             <li><a href="aboutme.html">About Me</a></li>
         </ul>
     </nav>
+<main>
+    <div class = "accordion">
+        <div class = "accordion-item">
+            <button class= "accordion-button">Work Experience</button>
+            <div class="accordion-content">
+                <div class="experience-item">
+                <a href="https://www.brief.news/how-it-works" target="_blank">
+                    <img src="images/upnexthq_logo.jpg" alt="breif logo" class="work-experience-logo">
+                </a>
+                    <div class="experience-details">
+                        <h3>Customer Service Specialist</h3>
+                        <p><strong>Upnext Technologies Inc</strong> · Contract</p>
+                        <p>Jan 2022 – May 2024</p>
+                        <ul class = "experience-tasks">
+                            <li>Supported a customer base of 10,000+ users by resolving inquiries via chat and email</li>
+                            <li>Provided fast and effective communication to ensure timely resolution and high satisfaction</li>
+                            <li>Collaborated with internal teams to escalate and resolve complex issues</li>
+                            <li>Conducted QA testing to identify bugs and improve platform reliability</li>
+                            <li>Effectively participated in remote team meetings with global colleagues to align on priorities and share insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">Projects</button>
+            <div class="accordion-content">
+
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button">Education</button>
+            <div class="accordion-content">
+                <h2>Bachelor of Science in Computer Science</h2>
+                <p>GPA: 3.714/4.0</p>
+                <p>Michigan State University, May 2027</p>
+                <p>Relevant Coursework: </p>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Physics II</li>
+                    <li>Calculus 3</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Computer Organization & Architecture</li>
+                    <li>Linear Algebra</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "accordion-item">
+            <button class="accordion-button">Skills</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+
 
     <footer class = "site-footer">
         <div class = 'footer-content'>
             <p>Contact Me:</p>
-            <p>Email: <a href="mailto:mifsudm1@msu.edu">mifsudm1@msu.edu</a> Phone: 734-536-6853</p>
+            <p>Email: <a href="mailto:mifsudm1@msu.edu">mifsudm1@msu.edu</a><span class="divider">Phone: 734-536-6853</span></p>
             <a href="https://www.linkedin.com/in/matt-mifsud-325788279/" target="_blank">
                 <img src = "images/linkedin.png" alt="LinkedIn" class="social-icon">
             </a>
@@ -30,5 +96,16 @@
         </div>
     </footer>
     
+
+    <script>
+        const accordianButtons = document.querySelectorAll('.accordion-button');
+
+        accordianButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
