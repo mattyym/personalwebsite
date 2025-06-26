@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5f6f76;
+  display: flex;
+}
+
+.navbar li {
+  flex: 1;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #a1b1bc;
+}
