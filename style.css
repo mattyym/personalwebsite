@@ -28,3 +28,10 @@ body {
 .navbar a:focus {
   background-color: #a1b1bc;
 }
+
+#home img {
+    width: 200px;
+    margin: 0 auto;
+    border: 4px solid #333;
+
+}
